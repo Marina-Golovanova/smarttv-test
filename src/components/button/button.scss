@@ -1,0 +1,16 @@
+.button {
+  font-size: 16px;
+  padding: 16px 67px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &--default {
+    background-color: inherit;
+    border: 2px solid #000;
+  }
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}

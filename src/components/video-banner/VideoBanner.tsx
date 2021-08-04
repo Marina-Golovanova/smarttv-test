@@ -1,12 +1,16 @@
 import React from "react";
 import banner from "./assets/banner.png";
+import { Banner } from "../banner/Banner";
 
 import "./video-banner.scss";
 
 export const VideoBanner: React.FC = () => {
   const [showVideo, setShowVideo] = React.useState(true);
+  const [showBanner, setShowBanner] = React.useState(false);
+
   React.useEffect(() => {
     setTimeout(() => setShowVideo(false), 60000);
+    setTimeout(() => setShowBanner(true), 5000);
   }, []);
 
   return (
@@ -25,6 +29,7 @@ export const VideoBanner: React.FC = () => {
         <img className="video-banner__image" src={banner} alt="dog" />
       )}
       <div className="video-banner__stub"></div>
+      {showBanner && <Banner />}
     </div>
   );
 };
