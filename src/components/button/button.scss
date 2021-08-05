@@ -3,10 +3,23 @@
   padding: 16px 67px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  text-transform: uppercase;
 
   &--default {
     background-color: inherit;
     border: 2px solid #000;
+  }
+
+  &--stretch {
+    height: 52px;
+    width: 100%;
+    padding: 0;
+  }
+
+  &--disable {
+    border: 1px solid #4e4e4e;
+    color: #4e4e4e;
+    pointer-events: none;
   }
 
   &:hover {

@@ -9,8 +9,13 @@ export const VideoBanner: React.FC = () => {
   const [showBanner, setShowBanner] = React.useState(false);
 
   React.useEffect(() => {
-    setTimeout(() => setShowVideo(false), 60000);
-    setTimeout(() => setShowBanner(true), 5000);
+    const timerVideo = setTimeout(() => setShowVideo(false), 60000);
+    const timerBanner = setTimeout(() => setShowBanner(true), 5000);
+
+    return () => {
+      clearInterval(timerVideo);
+      clearInterval(timerBanner);
+    };
   }, []);
 
   return (
@@ -23,12 +28,12 @@ export const VideoBanner: React.FC = () => {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; start; controls;"
           allowFullScreen
-        ></iframe>
+        />
       )}
       {!showVideo && (
         <img className="video-banner__image" src={banner} alt="dog" />
       )}
-      <div className="video-banner__stub"></div>
+      <div className="video-banner__stub" />
       {showBanner && <Banner />}
     </div>
   );

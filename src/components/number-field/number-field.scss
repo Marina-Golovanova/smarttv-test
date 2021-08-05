@@ -1,0 +1,22 @@
+.number-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #86d3f4;
+  height: 100%;
+  width: 380px;
+  padding: 72px 54px;
+
+  &__title {
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &__information {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+}

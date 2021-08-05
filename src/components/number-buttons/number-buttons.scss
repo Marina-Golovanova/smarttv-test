@@ -1,0 +1,27 @@
+.number-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 88px);
+  gap: 10px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    border: 2px solid #000;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &--long {
+      grid-column: span 2;
+    }
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}

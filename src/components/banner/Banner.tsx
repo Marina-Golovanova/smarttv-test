@@ -1,5 +1,5 @@
 import React from "react";
-import qrcode from "./assets/qrcode.png";
+import qrcodeImg from "../qrcode-img/qrcode-img.png";
 import { Button } from "../button/Button";
 
 import "./banner.scss";
@@ -11,11 +11,11 @@ export const Banner: React.FC = () => {
         <div>ИСПОЛНИТЕ МЕЧТУ ВАШЕГО МАЛЫША!</div>
         <div>ПОДАРИТЕ ЕМУ СОБАКУ!</div>
       </div>
-      <img className="banner__qrcode" src={qrcode} alt="qrcode" />
+      <img className="banner__qrcode" src={qrcodeImg} alt="qrcode" />
       <div className="banner__information">
         Сканируйте QR-код или нажмите ОК
       </div>
-      <Button text="ок" onButton={() => {}} />
+      <Button text="ок" onClick={() => {}} />
     </div>
   );
 };

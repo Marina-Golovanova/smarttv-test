@@ -1,15 +1,15 @@
 import React from "react";
 import { Layout } from "../layout/Layout";
 import { VideoBanner } from "../video-banner/VideoBanner";
+import { PhoneNumberScreen } from "../phone-number-screen/PhoneNumberScreen";
 
 import "./App.scss";
 
-function App() {
+export const App: React.FC = () => {
   return (
     <Layout>
-      <VideoBanner />
+      {/* <VideoBanner /> */}
+      <PhoneNumberScreen />
     </Layout>
   );
-}
-
-export default App;
+};
