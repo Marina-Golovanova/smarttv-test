@@ -1,0 +1,25 @@
+.submitted-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 380px;
+  height: 100%;
+  background: #86d3f4;
+  padding: 48px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 15px;
+  }
+
+  &__information {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+}

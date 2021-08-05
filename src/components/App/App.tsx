@@ -6,10 +6,24 @@ import { PhoneNumberScreen } from "../phone-number-screen/PhoneNumberScreen";
 import "./App.scss";
 
 export const App: React.FC = () => {
+  const [stateScreen, setStateScreen] = React.useState<
+    "videoBannerScreen" | "PhoneNumberScreen"
+  >("videoBannerScreen");
+
+  const onNext = () => {
+    setStateScreen("PhoneNumberScreen");
+  };
+
+  const onPrev = () => {
+    setStateScreen("videoBannerScreen");
+  };
+
   return (
     <Layout>
-      {/* <VideoBanner /> */}
-      <PhoneNumberScreen />
+      {stateScreen === "videoBannerScreen" && <VideoBanner onNext={onNext} />}
+      {stateScreen === "PhoneNumberScreen" && (
+        <PhoneNumberScreen onPrev={onPrev} />
+      )}
     </Layout>
   );
 };

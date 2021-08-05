@@ -4,7 +4,11 @@ import { Button } from "../button/Button";
 
 import "./banner.scss";
 
-export const Banner: React.FC = () => {
+type BannerProps = {
+  onNext: () => void;
+};
+
+export const Banner: React.FC<BannerProps> = (props) => {
   return (
     <div className="banner">
       <div className="banner__title">
@@ -15,7 +19,7 @@ export const Banner: React.FC = () => {
       <div className="banner__information">
         Сканируйте QR-код или нажмите ОК
       </div>
-      <Button text="ок" onClick={() => {}} />
+      <Button text="ок" onClick={props.onNext} />
     </div>
   );
 };

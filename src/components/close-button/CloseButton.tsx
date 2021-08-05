@@ -2,9 +2,13 @@ import React from "react";
 
 import "./close-button.scss";
 
-export const CloseButton: React.FC = () => {
+type CloseButtonProps = {
+  onPrev: () => void;
+};
+
+export const CloseButton: React.FC<CloseButtonProps> = (props) => {
   return (
-    <button className="close-button">
+    <button className="close-button" onClick={props.onPrev}>
       <svg width="24" height="24" viewBox="0 0 24 24">
         <line
           x1="2.34484"

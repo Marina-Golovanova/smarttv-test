@@ -4,7 +4,11 @@ import { Banner } from "../banner/Banner";
 
 import "./video-banner.scss";
 
-export const VideoBanner: React.FC = () => {
+type VideoBannerProps = {
+  onNext: () => void;
+};
+
+export const VideoBanner: React.FC<VideoBannerProps> = (props) => {
   const [showVideo, setShowVideo] = React.useState(true);
   const [showBanner, setShowBanner] = React.useState(false);
 
@@ -34,7 +38,7 @@ export const VideoBanner: React.FC = () => {
         <img className="video-banner__image" src={banner} alt="dog" />
       )}
       <div className="video-banner__stub" />
-      {showBanner && <Banner />}
+      {showBanner && <Banner onNext={props.onNext} />}
     </div>
   );
 };
