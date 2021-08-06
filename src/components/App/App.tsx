@@ -5,6 +5,8 @@ import { PhoneNumberScreen } from "../phone-number-screen/PhoneNumberScreen";
 
 import "./App.scss";
 
+// TODO router?
+// TODO useCallback
 export const App: React.FC = () => {
   const [stateScreen, setStateScreen] = React.useState<
     "videoBannerScreen" | "PhoneNumberScreen"

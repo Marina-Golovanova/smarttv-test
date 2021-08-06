@@ -11,9 +11,9 @@ type PhoneNumberScreenProps = {
 };
 
 export const PhoneNumberScreen: React.FC<PhoneNumberScreenProps> = (props) => {
-  const [stateScreen, setStateScreen] = React.useState<
-    "NumberField" | "SubmittedField"
-  >("NumberField");
+  const [stateScreen] = React.useState<"NumberField" | "SubmittedField">(
+    "NumberField"
+  );
 
   return (
     <div className="phone-number-screen">
