@@ -6,8 +6,16 @@ import { Button } from "../button/Button";
 
 import "./number-field.scss";
 
-export const NumberField: React.FC = () => {
+type NumberFieldProps = {
+  onSubmit: () => void;
+};
+
+export const NumberField: React.FC<NumberFieldProps> = (props) => {
   const [phoneNumber, setPhoneNumber] = React.useState<number[]>([]);
+  const [checked, setChecked] = React.useState(false);
+  const onChecked = () => {
+    setChecked(!checked);
+  };
 
   const onNumber = (n: number) => {
     setPhoneNumber(phoneNumber.concat(n));
@@ -27,12 +35,16 @@ export const NumberField: React.FC = () => {
         и с Вами свяжется наш менеждер для дальнейшей консультации
       </div>
       <NumberButtons onNumber={onNumber} onDelete={onDelete} />
-      <Checkbox text="Согласие на обработку персональных данных" />
+      <Checkbox
+        text="Согласие на обработку персональных данных"
+        checked={checked}
+        onChecked={onChecked}
+      />
       <Button
         text="подтвердить номер"
-        onClick={() => {}}
+        onClick={props.onSubmit}
         stretch={true}
-        disable={true}
+        disable={!(phoneNumber.length === 10) || !checked}
       />
     </div>
   );

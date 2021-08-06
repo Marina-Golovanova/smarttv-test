@@ -16,9 +16,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
       className={cn(
         "button",
         "button--default",
-        {
-          "button--stretch": props.stretch,
-        },
+        { "button--stretch": props.stretch },
         { "button--disable": props.disable }
       )}
       onClick={props.onClick}

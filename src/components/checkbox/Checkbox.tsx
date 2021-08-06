@@ -4,18 +4,20 @@ import "./checkbox.scss";
 
 type CheckboxProps = {
   text: string;
+  checked: boolean;
+  onChecked: () => void;
 };
 
 export const Checkbox: React.FC<CheckboxProps> = (props) => {
-  const [checked, setChecked] = React.useState(false);
-  const onChecked = () => {
-    setChecked(!checked);
-  };
   return (
     <label className="checkbox">
-      <input type="checkbox" className="checkbox__input" onChange={onChecked} />
+      <input
+        type="checkbox"
+        className="checkbox__input"
+        onChange={props.onChecked}
+      />
       <div className="checkbox__custom-input">
-        {checked && (
+        {props.checked && (
           <svg width="24" height="20" viewBox="0 0 24 20">
             <line
               x1="1.06066"

@@ -8,7 +8,6 @@ type BannerProps = {
   onNext: () => void;
 };
 
-// TODO: textransform
 export const Banner: React.FC<BannerProps> = (props) => {
   return (
     <div className="banner">
