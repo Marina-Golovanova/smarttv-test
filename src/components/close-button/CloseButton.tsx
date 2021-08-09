@@ -16,7 +16,7 @@ export const CloseButton: React.FC<CloseButtonProps> = (props) => {
           x2="22.6264"
           y2="22.2223"
           stroke="black"
-          stroke-width="3"
+          strokeWidth="3"
         />
         <line
           x1="1.6576"
@@ -24,7 +24,7 @@ export const CloseButton: React.FC<CloseButtonProps> = (props) => {
           x2="21.9392"
           y2="1.94067"
           stroke="black"
-          stroke-width="3"
+          strokeWidth="3"
         />
       </svg>
     </button>

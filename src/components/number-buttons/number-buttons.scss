@@ -20,7 +20,8 @@
       grid-column: span 2;
     }
 
-    &:hover {
+    &:hover,
+    &--active {
       background-color: #000;
       color: #fff;
     }

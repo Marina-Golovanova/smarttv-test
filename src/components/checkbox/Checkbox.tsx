@@ -25,7 +25,7 @@ export const Checkbox: React.FC<CheckboxProps> = (props) => {
               x2="8.06066"
               y2="18.5659"
               stroke="black"
-              stroke-width="3"
+              strokeWidth="3"
             />
             <line
               x1="6.2953"
@@ -33,7 +33,7 @@ export const Checkbox: React.FC<CheckboxProps> = (props) => {
               x2="22.9218"
               y2="1.9394"
               stroke="black"
-              stroke-width="3"
+              strokeWidth="3"
             />
           </svg>
         )}
