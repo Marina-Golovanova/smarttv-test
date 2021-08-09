@@ -1,0 +1,20 @@
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 88px;
+  height: 52px;
+  border: 2px solid #000;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, stroke 0.3s;
+
+  &:hover,
+  &:hover > svg line {
+    background-color: #000;
+    stroke: #fff;
+  }
+}

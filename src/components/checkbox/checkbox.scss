@@ -1,0 +1,31 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  &__custom-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+    border: 2px solid #000;
+    flex-shrink: 0;
+    margin-left: -40px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #565656;
+    margin-left: 20px;
+  }
+}
