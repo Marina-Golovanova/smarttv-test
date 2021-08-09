@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "cross-env REACT_APP_ACCESS_KEY=c0c6223fe8586b56b9a403e2da9dea3f react-scripts start",
-    "build": "cross-env REACT_APP_ACCESS_KEY=c0c6223fe8586b56b9a403e2da9dea3f react-scripts build"
+    "build": "cross-env REACT_APP_ACCESS_KEY=c0c6223fe8586b56b9a403e2da9dea3f PUBLIC_URL=/smarttv-test/build react-scripts build"
   },
   "eslintConfig": {
     "extends": [
