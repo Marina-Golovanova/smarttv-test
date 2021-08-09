@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/smarttv-test/build/static/css/main.e58a7265.chunk.css",
+    "main.js": "/smarttv-test/build/static/js/main.ce0d5f70.chunk.js",
+    "main.js.map": "/smarttv-test/build/static/js/main.ce0d5f70.chunk.js.map",
+    "runtime-main.js": "/smarttv-test/build/static/js/runtime-main.50ccc8d8.js",
+    "runtime-main.js.map": "/smarttv-test/build/static/js/runtime-main.50ccc8d8.js.map",
+    "static/css/2.3c526f5d.chunk.css": "/smarttv-test/build/static/css/2.3c526f5d.chunk.css",
+    "static/js/2.9b64e42b.chunk.js": "/smarttv-test/build/static/js/2.9b64e42b.chunk.js",
+    "static/js/2.9b64e42b.chunk.js.map": "/smarttv-test/build/static/js/2.9b64e42b.chunk.js.map",
+    "index.html": "/smarttv-test/build/index.html",
+    "static/css/2.3c526f5d.chunk.css.map": "/smarttv-test/build/static/css/2.3c526f5d.chunk.css.map",
+    "static/css/main.e58a7265.chunk.css.map": "/smarttv-test/build/static/css/main.e58a7265.chunk.css.map",
+    "static/js/2.9b64e42b.chunk.js.LICENSE.txt": "/smarttv-test/build/static/js/2.9b64e42b.chunk.js.LICENSE.txt",
+    "static/media/banner.18841d85.png": "/smarttv-test/build/static/media/banner.18841d85.png",
+    "static/media/phone-number-screen.scss": "/smarttv-test/build/static/media/fon.6fd7a8b6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50ccc8d8.js",
+    "static/css/2.3c526f5d.chunk.css",
+    "static/js/2.9b64e42b.chunk.js",
+    "static/css/main.e58a7265.chunk.css",
+    "static/js/main.ce0d5f70.chunk.js"
+  ]
+}
