@@ -22,8 +22,26 @@ export const NumberField: React.FC<NumberFieldProps> = (props) => {
   };
 
   const onDelete = () => {
-    setPhoneNumber(phoneNumber.splice(0, phoneNumber.length - 1));
+    setPhoneNumber(phoneNumber.slice(0, phoneNumber.length - 1));
   };
+
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (isFinite(+e.key)) {
+        setPhoneNumber((phoneNumber) => phoneNumber.concat(+e.key));
+      } else if (e.keyCode === 8) {
+        setPhoneNumber((phoneNumber) =>
+          phoneNumber.slice(0, phoneNumber.length - 1)
+        );
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   return (
     <div className="number-field">

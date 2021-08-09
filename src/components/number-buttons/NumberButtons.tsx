@@ -13,19 +13,28 @@ export const NumberButtons: React.FC<NumberButtonsProps> = (props) => {
   return (
     <div className="number-buttons">
       {numbers.map((n) => (
-        <div className="number-buttons__item" onClick={() => props.onNumber(n)}>
+        <button
+          className="number-buttons__item"
+          onClick={() => props.onNumber(n)}
+          tabIndex={0}
+        >
           {n}
-        </div>
+        </button>
       ))}
-      <div
+      <button
         className="number-buttons__item number-buttons__item--long"
         onClick={props.onDelete}
+        tabIndex={0}
       >
         стереть
-      </div>
-      <div className="number-buttons__item" onClick={() => props.onNumber(0)}>
+      </button>
+      <button
+        className="number-buttons__item"
+        onClick={() => props.onNumber(0)}
+        tabIndex={0}
+      >
         0
-      </div>
+      </button>
     </div>
   );
 };
