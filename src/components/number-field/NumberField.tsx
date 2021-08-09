@@ -24,7 +24,6 @@ export const NumberField: React.FC<NumberFieldProps> = (props) => {
 
   const onNumber = (n: number) => {
     if (phoneNumber.length < 10) {
-      console.log(phoneNumber.length);
       setPhoneNumber(phoneNumber.concat(n));
     }
   };
