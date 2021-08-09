@@ -18,4 +18,9 @@
     line-height: 16px;
     text-align: center;
   }
+
+  &__error {
+    font-weight: 500;
+    color: red;
+  }
 }
